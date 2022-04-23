@@ -2,12 +2,7 @@ from otree.api import *
 
 
 doc = """
-Kaushik Basu's famous traveler's dilemma (
-<a href="http://www.jstor.org/stable/2117865" target="_blank">
-    AER 1994
-</a>).
-It is a 2-player game. The game is framed as a traveler's dilemma and intended
-for classroom/teaching use.
+This is TDRegret
 """
 
 
@@ -148,8 +143,6 @@ class Claim(Page):
 
 class ResultsWaitPage(WaitPage):
     after_all_players_arrive = set_payoffs
-    # wait_for_all_groups = True
-    # after_all_players_arrive = 'regroup'
 
 class chat(Page):
     def get_timeout_seconds(player):
@@ -157,11 +150,7 @@ class chat(Page):
 
 class aMyWaitPage(WaitPage):
     template_name = 'TDRegret/aMyWaitPage.html'
-    #
-    # def vars_for_template(player):
-    #     return dict(
-    #         a=9999,
-    #     )
+
 
 class Results(Page):
     @staticmethod
